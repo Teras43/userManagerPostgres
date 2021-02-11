@@ -10,22 +10,16 @@ html
             div(class="createForm")
                 form(method="post", action="/createUser")
                     div
-                        label(for="firstName") First Name:&nbsp;
-                        input(id="firstName", name="firstName")
+                        label(for="first_name") First Name:&nbsp;
+                        input(id="first_name", name="first_name")
                     div
-                        label(for="lastName") Last Name:&nbsp;
-                        input(id="lastName", name="lastName")
+                        label(for="last_name") Last Name:&nbsp;
+                        input(id="last_name", name="last_name")
                     div
                         label(for="email") Email:&nbsp;
                         input(id="email", name="email", type="email")
                     div
                         label(for="age") Age:&nbsp;
                         input(id="age", name="age")
-                    div
-                        label(for="password") Password:&nbsp;
-                        input(id="password", name="password", type="password")
-                    div
-                        label(for="role") Role:&nbsp;
-                        input(id="role", name="role", placeholder="Student, Teacher...")
                     div
                         input(type="submit", value="Create")

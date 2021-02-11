@@ -13,7 +13,7 @@
 .topListingBlock {
     display: flex;
     justify-content: space-around;
-    max-width: 60%;
+    max-width: 35%;
     width: 100%;
     margin-top: 100px;
 }

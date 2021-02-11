@@ -1,4 +1,4 @@
-function deleteUser(id) {
+function deleteUser(guid) {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = () => {
         if (xhttp.readyState === 4 && xhttp.status === 200) {
@@ -6,12 +6,12 @@ function deleteUser(id) {
         }
     };
     xhttp.open("POST", "/deleteUser", true);
-    xhttp.setRequestHeader("userId", id);
+    xhttp.setRequestHeader("userid", guid);
     xhttp.send();
 }
 
-function goToEdit(id) {
-    window.location.href = `/editUser?userid=${id}`;
+function goToEdit(guid) {
+    window.location.href = `/editUser?userid=${guid}`;
 }
 
 function sortAsc() {
