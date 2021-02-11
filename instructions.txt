@@ -1,6 +1,11 @@
 To start the app:
 
 1. Once you have the file cloned from github, open up the terminal and type "npm i" to install all dependencies.
-2. Afterwards in the terminal, type "node app.js" or "nodemon app.js". 
-    (Node would work better due to the server restarting when users are created / edited / deleted with nodemon.)
-3. Go to localhost:3000 and the app should be loaded and working.
+2. Then create a file (outside the views folder) called .env
+3. In this .env file type PORT = 3001 on line 1.
+4. Then copy this onto line 2:
+    DATABASE_URL = postgres://tvleuawxdhxqtv:c6edec315ab32bbb293adc63dbafddcda19e39387427fe0aaffc1ff1e143d082@ec2-54-90-13-87.compute-1.amazonaws.com:5432/de6c54d8klo9ch
+    
+    Then save.
+2. Afterwards in the terminal, type "npm run dev".
+3. Go to localhost:3001 and the app should be loaded and working.
