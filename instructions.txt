@@ -9,3 +9,4 @@ To start the app:
     Then save.
 2. Afterwards in the terminal, type "npm run dev".
 3. Go to localhost:3001 and the app should be loaded and working.
+(Searching users is case sensitive)
