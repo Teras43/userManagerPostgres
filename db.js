@@ -49,6 +49,7 @@ const connectToDB = async () => {
             .catch(reject);
     });
 };
+
 connectToDB().then(() => {
     console.log("DB Connected.");
     client.query(createTable).then(() => console.log("Table found."));
@@ -93,7 +94,7 @@ const getSortedUsers = (sortDirection) => {
 };
 
 const searchUsers = (searchReq) => {
-    let searchSQL = `select first_name, last_name from users where first_name = $1 or last_name = $1`;
+    let searchSQL = `select first_name, last_name, email, age from users where first_name = $1 or last_name = $1`;
     return new Promise((resolve, reject) => {
         pool.query(searchSQL, [searchReq], (err, results) => {
             if (err) reject(err);
